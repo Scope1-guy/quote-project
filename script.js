@@ -3,7 +3,7 @@ function submitName(event) {
     
     let name = document.getElementById("nameText").value;
 
-    if (name.trim() !== '') {
+    if (name.trim() == '') {
         localStorage.setItem("userName", name);
         window.location.href = "index2.html";
     } else {
