@@ -1,0 +1,159 @@
+@media (max-width: 768px) {
+    .thebox header{
+        gap: 150px;
+        align-self: center;
+        justify-self: center;
+    }
+    .thebox header h4 img{
+        border-radius: 80px;
+        width: 100%;
+    }
+    .thebox header h5{
+        font-size: 40px;
+    }
+    .thebox header div{
+        margin-left: 0px;
+        display: block;
+    }
+    .thebox header div div{
+        width: 45px;
+        height: 5px;
+        margin: 4px;
+    }
+    .dropdown_menu{
+        display: block;
+        right: 10rem;
+        top: 80px;
+        padding: 0;
+    }
+    .dropdown_menu.open{
+        height: auto;
+        width: 400px;
+    }
+    .thebox form label{
+        margin: 10px;
+        font-size: 35px;
+    }
+    #nameText{
+        width: 50vw;
+        height: 2.8vh;
+        font-size: 25px;
+    }
+    #submit{
+        width: auto;
+        height: auto;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thebox header{
+        gap: 40px;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+    .thebox header h4 img{
+        border-radius: 70px;
+        width: 90%;
+    }
+    .thebox header h5{
+        font-size: 27px;
+    }
+    .thebox header div{
+        margin-left: 0px;
+        display: block;
+    }
+    .thebox form{
+        margin: 5px;
+        margin-top: 30px;
+    }
+    .thebox header div div{
+        width: 30px;
+        height: 5px;
+        margin: 4px;
+    }
+    .dropdown_menu{
+        display: block;
+        right: 3rem;
+        top: 60px;
+        padding: 0;
+    }
+    .dropdown_menu.open{
+        height: auto;
+        width: 280px;
+    }
+    .thebox form label{
+        margin:5px;
+        font-size: 28px;
+    }
+    #nameText{
+        width: 60vw;
+        height: 2.5vh;
+        font-size: 20px;
+    }
+    #submit{
+        width: auto;
+        height: auto;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .thebox header{
+        gap: 30px;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+    .thebox header h4 img{
+        border-radius: 30px;
+        width: 100%;
+    }
+    .thebox header h5{
+        font-size: 24px;
+    }
+    .thebox header div{
+        margin-left: 0px;
+        display: block;
+    }
+    .thebox form{
+        margin: 2px;
+        margin-top: 20px;
+    }
+    .thebox header div div{
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+    }
+    .dropdown_menu{
+        display: block;
+        right: 2.5rem;
+        top: 60px;
+        padding: 0;
+    }
+    .dropdown_menu.open{
+        height: auto;
+        width: 200px;
+    }
+    .thebox form label{
+        margin:5px;
+        font-size: 17px;
+    }
+    #nameText{
+        width: 60vw;
+        height: 2.5vh;
+        font-size: 17px;
+    }
+    #submit{
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+}

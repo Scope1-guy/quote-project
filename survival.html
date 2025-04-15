@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVIVAL</title>
+    <link rel="icon" type="image/png" href="pictures/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="medias.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="thebox" style="background-image: url(pictures/survival.webp); background-repeat: no-repeat;background-size: cover;"> <!--the box-->
+        <header>
+            <h4><img src="pictures/favicon.png" alt="logo" width="50%"></h4>
+            <h5>QuoteHaven</h5>
+            <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+                <li><a href="#" onclick="aboutButton()">About</a></li>
+                <li><a href="#" onclick="contacts()">Contacts</a></li>
+                <button onclick="getStartedButton()">Get Started</button>
+            </div>
+        </header><br>
+                    <hr>
+
+            <div class="mol2">
+                <h4>SURVIVAL QUOTES</h4>
+                <button onclick="
+                survivalQuote();
+                document.getElementById('dialoglove').showModal();
+                ">Get A Quote</button>
+            </div>
+
+            <div id="quote-display"></div><br>
+            <!--<dialog id="dialoglove">
+                <div id="quote-display"></div><br>
+                <button onclick="document.getElementById('dialoglove').close();">Close</button>
+            </dialog>-->
+
+            <footer class="footer2">Created by <span>BIG SCOPE</span></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

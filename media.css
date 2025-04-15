@@ -1,0 +1,165 @@
+@media (max-width: 768px) {
+    .quote_type{
+        margin-top: 30px;
+    }
+    .quote_type h5{
+        font-size: 30px;
+        margin: 5px;
+    }
+    .qtype{
+        margin-top: 30px;
+    }
+    .qtype div{
+        margin-top: 20px;
+        margin: 10px;
+        border: 3px black solid;
+        padding: 13px;
+    }
+    .qtype div a p{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .mol2{
+        margin-top: 20px;
+    }
+    .mol2 h4{
+        font-size: 40px;
+        font-style: italic;
+    }
+    .mol2 button{
+        width: auto;
+        padding: 10px;
+        height: auto;
+        margin: 0;
+        font-size: 30px;
+    }
+    .socials div img{
+        width: 15%;
+    }
+    .facebook p, .github p, .instagram p, .twitter p{
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        margin-left: 20px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 480px) {
+    .thebox{
+        padding: 10px;
+    }
+    .quote_type{
+        margin-top: 30px;
+    }
+    .quote_type h5{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .qtype{
+        margin-top: 30px;
+    }
+    .qtype div{
+        margin-top: 20px;
+        margin: 5px;
+        border: 3px black solid;
+        padding: 5px;
+        border-radius: 100px;
+        width: 90px;
+        height: 90px;
+    }
+    .qtype div p{
+        font-size: 17px;
+        font-weight: 700;
+        margin: 5px;
+    }
+    .footer2{
+        margin-top: 40px;
+        font-size:18px;
+    }
+    .footer2 span{
+        font-weight: 900;
+    }
+    .mol2 h4{
+        font-size: 27px;
+    }
+    .mol2 button{
+        width: auto;
+        padding: 7px;
+        height: auto;
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #quote-display{
+        width: 300px;
+    }
+    .socials div img{
+        width: 14%;
+    }
+    .facebook p, .github p, .instagram p, .twitter p{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        margin-left: 20px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 320px) {
+    .quote_type{
+        margin-top: 20px;
+    }
+    .quote_type h5{
+        font-size: 18px;
+        margin: 3px;
+    }
+    .qtype{
+        margin-top: 20px;
+    }
+    .qtype div{
+        margin-top: 20px;
+        margin: 5px;
+        border: 3px black solid;
+        padding: 0px;
+        border-radius: 100px;
+        width: 79px;
+        height: 79px;
+    }
+    .qtype div p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .footer2{
+        margin-top: 40px;
+        font-size:18px;
+    }
+    .footer2 span{
+        font-weight: 900;
+    }
+    .mol2 h4{
+        font-size: 27px;
+    }
+    .mol2 button{
+        width: auto;
+        height: auto;
+        padding: 6px;
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #quote-display{
+        width: 280px;
+    }
+    .socials div img{
+        width: 20%;
+    }
+    .facebook p, .github p, .instagram p, .twitter p{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        margin-left: 20px;
+        font-weight: 800;
+    }
+}

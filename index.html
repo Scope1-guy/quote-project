@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN - QUOTE PROJECT</title>
+    <link rel="icon" type="image/png" href="pictures/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="medias.css">
+</head>
+<body>
+    <div class="thebox" style="background-image: url(pictures/login1.jpg); background-repeat: no-repeat;background-size: cover;"> <!--the box-->
+        <header>
+            <h4><img src="pictures/favicon.png" alt="logo" ></h4>
+            <h5>QuoteHaven</h5>
+            <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+                <li><a href="#" onclick="aboutButton()">About</a></li>
+                <li><a href="#" onclick="contacts()">Contacts</a></li>
+                <button onclick="getStartedButton()">Get Started</button>
+            </div>
+        </header><br>
+<hr>
+        <form onclick="submitName(event)">
+            <label>Enter Your Name</label><br>
+            <input type="text" id="nameText"><br>
+            <input type="submit" value="Submit" id="submit" onclick="submitName()">
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
