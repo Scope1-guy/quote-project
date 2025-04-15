@@ -2,8 +2,8 @@ function submitName(event) {
     event.preventDefault();
     
     let name = document.getElementById("nameText").value;
-
-    if (name.trim() == '') {
+//.trim() == ''
+    if (name) {
         localStorage.setItem("userName", name);
         window.location.href = "index2.html";
     } else {
