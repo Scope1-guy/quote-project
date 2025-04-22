@@ -1,38 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOG IN - QUOTE PROJECT</title>
-    <link rel="icon" type="image/png" href="pictures/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="medias.css">
-</head>
-<body>
-    <div class="thebox" style="background-image: url(pictures/login1.jpg); background-repeat: no-repeat;background-size: cover;"> <!--the box-->
-        <header>
-            <h4><img src="pictures/favicon.png" alt="logo" ></h4>
-            <h5>QuoteHaven</h5>
-            <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="dropdown_menu">
-                <li><a href="#" onclick="howItWorks()">How it Works</a></li>
-                <li><a href="#" onclick="aboutButton()">About</a></li>
-                <li><a href="#" onclick="contacts()">Contacts</a></li>
-                <button onclick="getStartedButton()">Get Started</button>
-            </div>
-        </header><br>
-<hr>
-        <form onsubmit="submitName(event)">
-            <label>Enter Your Name</label><br>
-            <input type="text" id="nameText"><br>
-            <input type="submit" value="Submit" id="submit">
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- display based on users devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking javaScript file -->
+    <script defer src="script.js"></script>
+    <!-- linking fav-icon -->
+    <link rel="icon" type="image/png" href="pictures/favicon.png" />
+    <!-- linking style-sheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>QUOTE PROJECT</title>
+  </head>
+  <body>
+    <!-- Container for the App -->
+    <main class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <img class="logo" src="pictures/favicon.png" alt="logo" />
+        <h1 class="hero-txt">Quote-Haven</h1>
+
+        <!-- Hamburger Menu -->
+        <div class="toggle_btn hidden" onclick="navigationButton()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Drop down Section for hamburger  -->
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button class="dropdown-btn" onclick="getStartedButton()">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <form class="container-form">
+        <label class="main-txt">Enter Your Name</label>
+        <input class="user-input" type="text" id="nameText" />
+        <button class="submit-btn" id="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- indx2 html -->
+    <div class="thebox">
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/favicon.png" alt="logo" width="20%" /></h4>
+        <h5>QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+      <div class="quote_type">
+        <h5 id="nameDis"></h5>
+        <div class="qtype">
+          <div><p onclick="motQuote()">INSPIRING QUOTE</p></div>
+          <div><p onclick="luvQuote()">LOVE QUOTE</p></div>
+          <div><p onclick="surQuote()">SURVIVAL QUOTE</p></div>
+          <div><p onclick="deppQuote()">DEEP QUOTES</p></div>
+          <div><p onclick="funnyQuote()">FUNNY QUOTE</p></div>
+          <div><p onclick="dakQuote()">DARK HUMOR</p></div>
+        </div>
+      </div>
+      <footer class="footer2">Created by <span>BIG SCOPE</span></footer>
     </div>
 
-    <script src="script.js" defer></script>
-</body>
+    <!-- lov html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/love2.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/logo2.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: white">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="mol2">
+        <h4 style="color: white">LOVE QUOTES</h4>
+        <button
+          onclick="
+              loveQuote();
+              document.getElementById('dialoglove').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <!--<dialog id="dialoglove">
+              <div id="quote-display"></div><br>
+              <button onclick="document.getElementById('dialoglove').close();">Close</button>
+          </dialog>-->
+
+      <div id="quote-display"></div>
+      <br />
+
+      <footer class="footer2">Created by <span>BIG SCOPE</span></footer>
+    </div>
+
+    <!-- motivation html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/motivation\ background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/logo2.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: white; font-weight: 900">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+      <div class="mol2">
+        <h4>INSPIRING QUOTES</h4>
+        <button
+          onclick="
+              motivationQuote();
+              document.getElementById('dialogmotivation').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <div id="quote-display"></div>
+      <br />
+      <!--<dialog id="dialogmotivation">
+              <div id="quote-display"></div><br>
+              <button id="dialogbtn" onclick="document.getElementById('dialogmotivation').close();">Close</button>
+          </dialog>-->
+
+      <footer class="footer2" style="color: white; font-weight: 500">
+        Created by <span>BIG SCOPE</span>
+      </footer>
+    </div>
+
+    <!-- how it works html -->
+    <div class="thebox">
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/favicon.png" alt="logo" width="20%" /></h4>
+        <h5>QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="how-it">
+        <h5>How its Works</h5>
+        <p>
+          Using <b>QuoteHaven</b> is simple — just a click away from the words
+          you need.<br />
+
+          Pick Your Vibe<br />
+          Choose from six categories: Inspiring, Love, Survival, Deep, Funny, or
+          Dark Humor. Each one holds a unique mood and message.<br />
+
+          Click “Get a Quote”<br />
+          Hit the button and boom — a fresh quote appears inside a smooth popup
+          box. No repeats unless the vibe really wants you to hear it twice
+          😏<br />
+
+          Close & Explore More<br />
+          After reading, close the dialog and feel free to dive into another
+          category or click again to get a new quote.<br />
+
+          That’s it. No noise. No login. Just pure words, real emotions, and
+          quotes that stick.
+        </p>
+      </div>
+    </div>
+
+    <!-- funny html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/funny4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/logo2.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: white">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="mol2">
+        <h4>FUNNY QUOTES</h4>
+        <button
+          onclick="
+              funnyQuote();
+              document.getElementById('dialoglove').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <div id="quote-display"></div>
+      <br />
+      <!--<dialog id="dialoglove">
+              <div id="quote-display"></div><br>
+              <button onclick="document.getElementById('dialoglove').close();">Close</button>
+          </dialog>-->
+
+      <footer class="footer2">Created by <span>BIG SCOPE</span></footer>
+    </div>
+
+    <!-- error html -->
+    <div class="errordiv">
+      <p>Unavailable</p>
+      <h5>This link is not available right now.....</h5>
+    </div>
+
+    <!-- dp html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/deep2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header
+        style="background-color: rgba(0, 0, 0, 0.3); border: 1px solid white"
+      >
+        <h4><img src="pictures/logo2.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: white">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+      <div class="mol2">
+        <h4 style="color: white">DEEP QUOTES</h4>
+        <button
+          onclick="
+              deepQuote();
+              //document.getElementById('dialogmotivation').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <div id="quote-display"></div>
+      <br />
+      <!--<dialog id="dialogmotivation">
+              <div id="quote-display"></div><br>
+              <button onclick="document.getElementById('dialogmotivation').close();">Close</button>
+          </dialog>-->
+
+      <footer class="footer2" style="color: white">
+        Created by <span>BIG SCOPE</span>
+      </footer>
+    </div>
+
+    <!-- dark html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/dark2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header
+        style="background-color: rgba(0, 0, 0, 0.3); border: 1px solid white"
+      >
+        <h4><img src="pictures/logo2.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: white">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+          <div style="background-color: white"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="mol2">
+        <h4 style="color: white">DARK HUMOR</h4>
+        <button
+          onclick="
+              darkQuote();
+              document.getElementById('dialoglove').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <div id="quote-display"></div>
+      <br />
+      <!--<dialog id="dialoglove">
+              <div id="quote-display"></div><br>
+              <button onclick="document.getElementById('dialoglove').close();">Close</button>
+          </dialog>-->
+
+      <footer class="footer2" style="color: white">
+        Created by <span>BIG SCOPE</span>
+      </footer>
+    </div>
+
+    <!-- contact html -->
+    <div class="thebox">
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/favicon.png" alt="logo" width="50%" /></h4>
+        <h5 style="color: black">QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div style="background-color: black"></div>
+          <div style="background-color: black"></div>
+          <div style="background-color: black"></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="socials">
+        <div class="facebook" onclick="error()">
+          <img src="pictures/icons/social.png" alt="facebook" width="9%" />
+          <p>Facebook</p>
+        </div>
+        <br />
+        <div class="github" onclick="github()">
+          <img src="pictures/icons/github.png" alt="github" width="9%" />
+          <p>Github</p>
+        </div>
+        <br />
+        <div class="instagram" onclick="error()">
+          <img
+            src="pictures/icons/instagram (1).png"
+            alt="instagram"
+            width="9%"
+          />
+          <p>Instagram</p>
+        </div>
+        <br />
+        <div class="twitter" onclick="twitter()">
+          <img src="pictures/icons/twitter (1).png" alt="twitter" width="9%" />
+          <p>X</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about html -->
+    <div class="about-page">
+      <h4>ABOUT WEBSITE</h4>
+      <p>
+        WELCOME TO <b>QuoteHaven</b> - a place where words speak louder than
+        noise. From motivation to love, deep thoughts to dark humor, every quote
+        here is picked to match your mood, lift your spirit, or make you laugh
+        when life gets too serious. We keep it real with six core vibes:<br />
+        <b>Inspiring, Love, Survival, Deep, Funny, and Dark humor.</b><br />
+        Think of this site as your daily dose of truth, comfort, and a little
+        chaos-all in one place. Take what you need,feel something, and come back
+        anytime.
+      </p>
+    </div>
+
+    <!-- survival html -->
+    <div
+      class="thebox"
+      style="
+        background-image: url(pictures/survival.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <!--the box-->
+      <header>
+        <h4><img src="pictures/favicon.png" alt="logo" width="50%" /></h4>
+        <h5>QuoteHaven</h5>
+        <div id="toggle_btn" class="toggle_btn" onclick="navigationButton()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" onclick="howItWorks()">How it Works</a></li>
+          <li><a href="#" onclick="aboutButton()">About</a></li>
+          <li><a href="#" onclick="contacts()">Contacts</a></li>
+          <button onclick="getStartedButton()">Get Started</button>
+        </div>
+      </header>
+      <br />
+      <hr />
+
+      <div class="mol2">
+        <h4>SURVIVAL QUOTES</h4>
+        <button
+          onclick="
+              survivalQuote();
+              document.getElementById('dialoglove').showModal();
+              "
+        >
+          Get A Quote
+        </button>
+      </div>
+
+      <div id="quote-display"></div>
+      <br />
+      <!--<dialog id="dialoglove">
+              <div id="quote-display"></div><br>
+              <button onclick="document.getElementById('dialoglove').close();">Close</button>
+          </dialog>-->
+
+      <footer class="footer2">Created by <span>BIG SCOPE</span></footer>
+    </div>
+  </body>
 </html>
